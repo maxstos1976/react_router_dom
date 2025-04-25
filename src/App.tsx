@@ -1,16 +1,13 @@
-import UseRef from "./components/Memory/UseRef";
-import UseCallBackParent from "./components/Memory/useCallback";
-import NumeroPrimo from "./components/Memory/numeroPrimo";
+import Providers from "./Providers";
 
 import "./App.css";
+import Router from "./Router";
 
 function App() {
   return (
-    <>
-      <UseRef />
-      <UseCallBackParent />
-      <NumeroPrimo /> // Como usar useMemo
-    </>
+    <Providers>
+      <Router />
+    </Providers>
   );
 }
 
